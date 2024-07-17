@@ -1,0 +1,37 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="carousel" aria-roledescription="carousel" aria-label="describe the image set here">
+        <div class="carousel-inner">
+            <div class="controls">
+                <button class="previous" aria-controls="carousel-items" aria-label="previous image">&#60;</button>
+                <button class="next" aria-controls="carousel-items" aria-label="next image">&#62;</button>
+            </div>
+            <div class="carousel-items" id="carousel-items" aria-live="off">
+                <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                    <div class="carousel-image">
+                        <img src="/images/1.png" alt="image description">
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                    <div class="carousel-image">
+                        <img src="/images/2.jpg" alt="image description">
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                    <div class="carousel-image">
+                        <img src="/images/3.png" alt="image description">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

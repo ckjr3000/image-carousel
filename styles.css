@@ -1,0 +1,92 @@
+/* General image styling */
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for carousel container */
+.carousel {
+    background-color: #eee;
+    max-width: 450px;
+    margin: auto; /* Center the carousel horizontally */
+}
+
+/* Inner container of the carousel */
+.carousel .carousel-inner {
+    position: relative;
+}
+
+/* Styling for carousel items container */
+.carousel .carousel-items {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Focus styling for accessibility */
+.carousel .carousel-items.focus {
+    padding: 2px;
+    border: solid 3px #005a9c;
+}
+
+/* Carousel item styling */
+.carousel .carousel-item {
+    display: none;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Active carousel item */
+.carousel .carousel-item.active {
+    display: block;
+}
+
+/* Ensure the image container has proper dimensions */
+.carousel .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Shared CSS for Previous and Next Buttons */
+.carousel .controls {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    padding: 0.25em 1.25em 0;
+    justify-content: space-between; /* Space the buttons evenly */
+}
+
+.carousel .controls button {
+    color: rgb(164, 183, 192);
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 2em; /* Increase the size of the buttons */
+}
+
+/* Positioning of Previous button */
+.carousel .controls button.previous {
+    left: 0.5em;
+}
+
+/* Positioning of Next button */
+.carousel .controls button.next {
+    right: 0.5em;
+}
